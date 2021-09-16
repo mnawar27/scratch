@@ -1,9 +1,56 @@
+<!doctype html>
 <html>
     <head>
-        <title> My Website </title>
+        <title> University of Delaware Clubs</title>
+        <link rel="stylesheet" href="main.css">
+
+        <script>
+            function addClub() {
+                let counter = document.querySelector(".club-counter").innerText; 
+                counter = parseInt(counter,10); 
+                console.log(counter); 
+                document.querySelector(".club-counter").innerText = counter+1;
+            }
+        </script>
 
     </head>
     <body>
-        Welcome to my Daily Routine!!
+        <img src=https://www1.udel.edu/lock-down/ocm-graphics/internal/FightinYDCweb.jpg> <br>
+        <h1>Here are some of the <b>University of Delaware</b> student <br>organizations that might be of interest to you!</h1><br>
+        <ul>
+            <li><a href="https://studentcentral.udel.edu/organization/arabiclanguageclub">Arabic Language Club</a></li>
+            <div><p>The Arabic Language Club was founded to celebrate and
+            </p></div> 
+            <p>promote Arabic language and culture, no language experience 
+            required.</p>
+            <li><a href="https://studentcentral.udel.edu/organization/foodandculinaryclub">Food and Culinary Club</a></li>
+            <div><p>For foodies, future cooks, or students just looking to learn some basic cooking skills,</p></div>
+            <div><p>this club is for you! Our club with provide you with lists of ingredients that you will need for whatever we are making</p></div>
+            <div><p>for that zoom meeting! Although we can’t all be together cooking in the
+            Willard food lab, we will do what we can over zoom!</p> </div>
+            <li><a href="https://studentcentral.udel.edu/organization/nihongotable">Japanese Culture and Language Club</a> </li>
+            <p>The JPLC welcomes all students who are interested in Japanese, not just those
+               <p> who are taking Japanese classes! During each of their meetings,</p> <p>they do a v
+                ariety of activities relating to Japanese culture and language to help members learn and 
+                hone their skills.</p>
+                <li><a href="https://studentcentral.udel.edu/organization/muslimstudentassociation">Muslim Student Association</a> </li>
+                <p>The UD MSA is committed to informing Muslims and non-Muslims about the traditional teachings of</p> <p>Islam through routine organized events and programming.</p>
+                <li><a href="https://studentcentral.udel.edu/organization/zumbaclub">Zumba Club</a></li>
+                <p>Ditch the workout- join the club! Zumba is a latin-inspired, easy-to-follow, calorie burning, dance</p>
+                <p>fitness party! The Zumba Club offers FREE ZUMBA classes 6 days a week plus jam packed</p>
+                <p>“Zumbathons” available to ALL UD students! Add our club for times!</p>
+
+        </ul>
+
+        <h2>Let's Count How many Clubs you have joined so far!</h2>
+
+        <div>
+            Clubs: <span class = "club-counter">0</span>
+        </div>
+
+        
+        <div>
+            <button onclick="addClub()">Add Club</button>
+        </div>
     </body>
 </html>
